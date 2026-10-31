@@ -212,24 +212,26 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
         </div>
 
-        {/* Mandatory SLICM & Legal Disclaimer in Liquid Glass */}
-        <div className="mt-8 p-4 rounded-2xl liquid-glass-subtle text-[11px] leading-relaxed text-slate-300">
-          <div className="flex items-start gap-2.5">
-            <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-            <div>
+        {/* Official Certification Notice */}
+        <div className="mt-10 p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+          <div className="flex items-start gap-3.5">
+            <div className="w-8 h-8 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+              <ShieldCheck className="w-4.5 h-4.5" />
+            </div>
+            <div className="text-xs sm:text-[13px] leading-relaxed text-slate-800">
               <p>
-                <strong className="text-white">Official Certification Notice:</strong> The Professional Credit Management qualification is awarded by the <strong className="text-white">Sri Lanka Institute of Credit Management (SLICM)</strong>. Asian International Academy (AIA) delivers tuition, study pathways, exam preparation, and student support. AIA does not independently award the credit management qualification.
+                <strong className="font-bold text-slate-950">Official Certification Notice:</strong> The Professional Credit Management qualification is awarded by the <strong className="font-bold text-slate-950">Sri Lanka Institute of Credit Management (SLICM)</strong>. Asian International Academy (AIA) delivers tuition, study pathways, exam preparation, and student support. AIA does not independently award the credit management qualification.
               </p>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-slate-400 gap-4">
+        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-xs text-slate-400 gap-4">
           <p>© {new Date().getFullYear()} AIA Holdings – Asian International Academy Holdings Private Limited. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-slate-300">
             <span>Colombo: 329 Galle Road, Colombo 04</span>
-            <span className="text-white/20">·</span>
+            <span className="text-white/20 hidden sm:inline">·</span>
             <span>Kandy: 675 William Gopallawa Mawatha, Kandy</span>
           </div>
         </div>
