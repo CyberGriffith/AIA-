@@ -1,0 +1,6 @@
+{
+  "name": "AIA Holdings - Asian International Academy",
+  "description": "Official website for Asian International Academy (AIA Holdings): Study Abroad across 17 global destinations, Professional Credit Management (awarded by SLICM), BIET Engineering & IT, and Alpha Business School ACCA pathways.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
