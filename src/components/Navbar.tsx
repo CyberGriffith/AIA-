@@ -100,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Pristine white backing capsule ensuring 100% brand color accuracy on dark glass */}
             <div className="bg-white/95 hover:bg-white px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full shadow-sm flex items-center transition-all group-hover:shadow-md">
               <img
-                src="/assets/aistudio/aia-logo_3fefb8d5.png"
+                src={`${import.meta.env.BASE_URL}assets/aistudio/aia-logo_3fefb8d5.png`}
                 alt="AIA Holdings – Asian International Academy"
                 className="h-7 sm:h-8.5 w-auto object-contain transition-transform duration-150 group-hover:scale-102"
               />
@@ -216,7 +216,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               onClick={onOpenFindMyPath}
               className="flex items-center gap-1.5 px-3 xl:px-3.5 py-1.5 text-xs font-medium text-white/90 hover:text-white bg-white/10 hover:bg-white/15 border border-white/15 rounded-full backdrop-blur-md transition-all cursor-pointer hover:border-white/25"
             >
-              <Compass className="w-3.5 h-3.5 text-[#ff4d4f]" />
+              <Compass className="w-4 h-4 text-white/80 shrink-0" />
               <span>Find My Path</span>
             </button>
 
@@ -276,7 +276,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 }}
                 className="flex items-center justify-center gap-1.5 py-2.5 px-3 bg-white/10 hover:bg-white/15 border border-white/15 rounded-full text-xs font-semibold text-white cursor-pointer"
               >
-                <Compass className="w-3.5 h-3.5 text-[#ff4d4f]" />
+                <Compass className="w-4 h-4 text-white/80 shrink-0" />
                 <span>Find My Path</span>
               </button>
               <button

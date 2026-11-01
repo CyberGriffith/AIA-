@@ -56,7 +56,7 @@ export const Footer: React.FC<FooterProps> = ({
           <div className="lg:col-span-2 space-y-5">
             <div className="bg-white/95 p-3 rounded-2xl inline-block shadow-sm">
               <img
-                src="/assets/aistudio/aia-logo_3fefb8d5.png"
+                src={`${import.meta.env.BASE_URL}assets/aistudio/aia-logo_3fefb8d5.png`}
                 alt="AIA Holdings – Asian International Academy"
                 className="h-10 w-auto"
               />
