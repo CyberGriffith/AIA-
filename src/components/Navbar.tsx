@@ -77,11 +77,9 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <header
-      className={`sticky top-3 sm:top-5 z-50 w-full px-3 sm:px-6 lg:px-8 pointer-events-none transition-all duration-300 ${
-        currentPage === 'home' ? '-mb-20 sm:-mb-24' : 'mb-6 sm:mb-8'
-      }`}
+      className="fixed top-3 sm:top-5 left-1/2 -translate-x-1/2 z-[1000] w-full max-w-[1380px] px-3 sm:px-6 lg:px-8 pointer-events-none transition-all duration-300"
     >
-      <div className="max-w-[1380px] mx-auto pointer-events-auto">
+      <div className="w-full pointer-events-auto">
         {/* Floating Liquid-Glass Pill Navigation Bar */}
         <nav
           className={`w-full rounded-full transition-all duration-300 relative ${

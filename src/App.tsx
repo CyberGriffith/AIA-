@@ -102,7 +102,7 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 relative z-10">
+      <main className={`flex-1 relative z-10 ${currentPage !== 'home' ? 'pt-20 sm:pt-24' : ''}`}>
         {currentPage === 'home' && (
           <HomePage
             onNavigate={navigateTo}
